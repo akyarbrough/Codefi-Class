@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    const original = 'amanda';
+    const clone = 'AMANDA';
+
+    console.group('String');
+        console.log(original == clone);
+        console.log(original == 'amanda');
+        console.log(original==clone.toLowerCase());
+    console.groupEnd();
+
+    const num1 = 10;
+    const num2 = '10';
+
+    console.group('Numbers');
+        console.log(num1 == num2); // true
+        console.log(num1 === num2); //false
+        console.log(num1 != num2); // false
+        console.log(num1 !== num2);// true
+    console.groupEnd();
+
+    let what;
+    let thing = null;
+
+    console.group('Booleans');
+        console.log(Boolean(what)); //false
+        console.log(Boolean(thing)); //false
+        console.log(Boolean(num1)); //true
+        console.log(Boolean(num2)); //true
+        console.log(Boolean({})); //true
+        console.log(Boolean([])); //true
+    console.groupEnd();
+
+    const firstArr = [1, 2, 3];
+    const secondArr = [1, 2, 3];
+    const firstObj = {color: 'red'};
+    const secondObj = {color: 'red'};
+
+    console.group('Objects and Arrays');
+        console.log(firstArr == secondArr); //false
+        console.log(firstObj == secondObj); //false    
+    console.groupEnd();
+
+    console.group('And Or');
+        console.log(Boolean('blah')&& Boolean('thing')); //true
+        console.log(Boolean('blah') && Boolean('')); // false
+        console.log(Boolean('blah')||Boolean ('')); //true
+        console.log(Boolean('')||Boolean('')); //false
+    console.groupEnd();
+
+</script>
+</html>
