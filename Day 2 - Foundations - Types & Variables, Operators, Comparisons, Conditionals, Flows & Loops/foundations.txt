@@ -1,0 +1,9 @@
+1.  What are data types?  
+        Different categories of particular types of data.
+2.  What are operators used for?  
+        An operator is doing math, comparing things, and manipulate or evaluate values.
+3.  What are conditional statements?
+        Conditional statements means that something will happen if the statement is true; otherwise, it is going to do something else.
+4.  What are loops?
+        They keep doing something over and over again until it evaluates to a false statement.
+                
