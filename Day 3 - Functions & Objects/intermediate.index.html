@@ -1,37 +1,48 @@
+<!-- Problem -->
+<!-- Print out all user information at the click of the button -->
+<!-- Step 1: Create Button -->
+<!-- Step 2: Create a function that print out user information -->
+<!-- Step 3: Attach event listener to button to execute function -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <button onclick="userInformation()">Click Me</button>
+  </body>
+  <script>
+    // Global scope
 
-</body>
-<script>
- let user = [
-    {
+    let user = [
+      {
         name: "Shelly",
         age: 35,
-        occupation: "doctor"
-    },{
+        occupation: "doctor",
+      },
+      {
         name: "Robert",
         age: 32,
-        occupation: "lawyer"
-    },{
+        occupation: "lawyer",
+      },
+      {
         name: "Anah",
         age: 22,
-        occupation: "cashier"
-    },{
+        occupation: "cashier",
+      },
+      {
         name: "Frank",
         age: 68,
-        occupation: "retired"
+        occupation: "retired",
+      },
+    ];
+
+    function userInformation() {
+        // Every function creates their own scope
+      console.log(user);
     }
-]
- function userInformation(user) {
-    console.log(user);
- } 
-</script>
+  </script>
 </html>
