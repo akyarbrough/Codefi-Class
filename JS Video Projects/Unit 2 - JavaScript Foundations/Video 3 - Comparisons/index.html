@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+   const original = 'chris';
+   const clone = 'CHRIS';
+
+   console.groupCollapsed('String');
+    console.log(original == clone); //returns false
+    console.log(original == 'chris'); //returns true
+    console.log(original == clone.toLocaleLowerCase());//returns true
+   console.groupEnd();
+
+   const num1 = 10;
+   const num2 = '10';
+
+   console.groupCollapsed('Numbers');
+    console.log(num1 == num2); //returns true (== allows coorision)
+    console.log(num1 === num2) //returns false (=== does not allow coorision)
+    console.log(num1 != num2);//returns false (!= allows coorision)
+    console.log(num1 !== num2); //returns true (!== is checking that types are the same)
+   console.groupEnd();
+
+   console.groupCollapsed('Booleans');
+    let what; //returns udefined because there is not a value for what
+    let thing = null;
+
+    console.log(Boolean(original))//returns true because original has a value
+    console.log(Boolean('')); //returns false because there is no value in an empty string
+    console.log(Boolean(what)); //returns false because the value is undefined
+    console.log(Boolean(thing)); // returns false because there is no value
+    console.log(Boolean(num1)); //returns true because it has a value
+    console.log(Boolean(num2)); //returns true becaue it has a value
+    console.log({});//an empty object returns true
+    console.log([]); //an empty array returns true
+    console.groupEnd();
+
+    const firstArr = [1, 2, 3];
+    const secondArr = [1, 2, 3];
+    const firstObj = {color: 'red'};
+    const secondObj = {color: 'red'};
+
+    console.groupCollapsed('Objects and Arrays');
+
+    console.log(firstArr == secondArr);//returns false
+    console.log(firstObj == secondObj);//returns false
+   console.groupEnd();
+
+   console.group('And Or');
+    console.log(Boolean('blah')) && (Boolean('thing')); //returns true because both are true
+    console.log(Boolean('blah')) && (Boolean(''));//returns true
+    console.log(Boolean('blah')) || (Boolean('thing')); //returns true
+    console.log(Boolean('')) || (Boolean('')); //returns false
+
+   console.groupEnd;
+
+
+</script>

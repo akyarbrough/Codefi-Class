@@ -11,13 +11,30 @@
 </body>
 </html>
 <script>
-    const a = 10;
-    const b = 3;
-    const c = 15;
-    const d = '5';
-    const e = 'my name';
-    const f = 'is chris';
+    let a = 10;
+    let b = 3;
+    let c = 15;
+    let d = '5';
+    let e = 'my name';
+    let f = 'is chris';
 
+    console.group('Addition')
+    console.log(a+b);//returns 13
+    console.log(a+c) //returns 25
+    console.log(e + " " + f); //returns my name is chris
+    console.log(a+d); //returns 105 because a in the number 10 and d is the string 5
+    console.groupEnd();
+
+    console.group('Multiplication')
+    console.log(a * 3); //returns 30
+    console.log(a * b)//returns 30
+    console.log(b*c) //returns 45
+    console.groupEnd
+
+    console.group('Incrementing');
+    console.log (a + 1); //returns 11
+    console.log(a++); //will incrememnt a by 1 each time
     
+
 
 </script>
