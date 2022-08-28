@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
 //objects
 
 const user = {
@@ -8,4 +23,44 @@ const user = {
 //arrays
 const users = ['chris', 'nick', 'holly'];
 
-console.log(user);
+console.log(user); //returns name: 'Chris', username: 'chrisoncode
+console.log(user.name); //returns Chris
+
+console.log(users); //returns ['chris', 'nick', 'holly']
+console.log(users[0]);  //returns chris
+console.log(users[1]);  //returns nick
+console.log(users[2]); // returns holly
+
+const luckyNumbers = [1, 43, 54, 132];
+const whatever = ['chris', 1, 'holly'];
+
+console.log(whatever); //returns ['chris', 1, 'holly']
+console.log(whatever[0]) //returns chris
+console.log(whatever[1])//returns 1
+console.log(whatever[2])//returns holly
+
+const superUsers = [
+    {name: 'chris'},
+    {name: 'nick'},
+    {name: 'holly'}
+];
+
+console.log(superUsers[2].name); //returns holly
+
+//ways to declare variables
+var thing = 'first'; //don't use
+const otherThing = { //constant = cannot reassign this
+    name: 'chris'
+};
+let newThing = 'third'; //let = can reassign it
+
+otherThing.name = 'holly'; //will return Holly because the key name CAN be reassigned
+
+//======================
+let myVariable;
+
+myVariable = 'something'; //returns 'something'
+
+
+
+</script>
