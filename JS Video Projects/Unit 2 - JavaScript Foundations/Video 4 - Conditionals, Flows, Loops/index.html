@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dogsList"></div>
+</body>
+</html>
+
+<script>
+    const name = 'chris';
+    //const name = prompt('What is your name?') will bring up a box for the user to type in their name
+    const username = 'chrisoncode';
+
+    //if
+//    if (name == 'nick'){
+//      alert('Hello!');
+//   }else if (name == 'holly'){
+ //       console.log('This is holly');
+ //   }else {
+ //       console.log('not nick ');
+ //   }
+
+    //for loop
+    const dogsList = document.querySelector('.dogsList');
+    const dogs = [
+        {name: 'bruce', type: 'chihuahua'},
+        {name: 'chance', type: 'bernese'}
+    ];
+
+    //prints each object in the list individually
+  //      for (let i = 0; i < dogs.length; i++){
+  //          console.log(dogs[i]);
+  //      }
+
+   //     for (let i = 0; i < dogs.length; i++) {
+//       //grab the dog
+//     const dog = dogs[i];
+ //          const dogData = document.createElement('div');
+            //`${}` grabs the information from a particular part of the array
+ //           dogData.innerText = `${dog.name} is a ${dog.type}`;
+ //           dogsList.appendChild(dogData);
+ //       }
+    //while loop
+//    let i = 0;
+ //   while(i < dogs.length) {
+        //grab the dog
+ //       const dog = dogs[i];
+ //       const dogData = document.createElement('div');
+            //`${}` grabs the information from a particular part of the array
+ //           dogData.innerText = `${dog.name} is a ${dog.type}`;
+//            dogsList.appendChild(dogData);
+
+ //       i++;
+ //   }
+    
+    //do while loop
+//    let i = 0;
+ //   while(i < dogs.length) {
+        //grab the dog
+ //       const dog = dogs[i];
+ //       const dogData = document.createElement('div');
+            //`${}` grabs the information from a particular part of the array
+ //           dogData.innerText = `${dog.name} is a ${dog.type}`;
+//            dogsList.appendChild(dogData);
+
+ //       i++;
+ //   }
+    
+    //for...of iterator
+    for (let dog of dogs) {
+        const dogData = document.createElement('div');
+            //`${}` grabs the information from a particular part of the array
+           dogData.innerText = `${dog.name} is a ${dog.type}`;
+            dogsList.appendChild(dogData);
+    }
+
+
+</script>
